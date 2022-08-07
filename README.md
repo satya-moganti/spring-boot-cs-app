@@ -24,12 +24,12 @@ This example project demonstrates  fleet management using Spring Boot web applic
 
 # Implementation 
   The CS Car Service App Implemented using following technologies
-    1. Spring boot  for developing  REST API with validation  
-    2. Maven for dependency managemnt
-    3. Swagger for Api Documentation
-    4. Junit for Unit test case
-    5. Logger for logging information
-    6. H2 Database for in memory db managemnt
+    	1. Spring boot  for developing  REST API with validation  
+   	2. Maven for dependency managemnt
+    	3. Swagger for Api Documentation
+    	4. Junit for Unit test case
+    	5. Logger for logging information
+    	6. H2 Database for in memory db managemnt
 
 ## H2 Database  
 ```java
