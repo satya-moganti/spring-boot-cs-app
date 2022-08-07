@@ -15,14 +15,14 @@ This example project demonstrates  fleet management using Spring Boot web applic
  Step 1 : Download project from git repo from the following location and extract project
 	    https://github.com/satya-moganti/spring-boot-cs-app.git
  Step 2 : Build a jar using following command
+            cd spring-boot-cs-app
 	    mvn clean install
  Step 3 : Run application using following command
             cd target
 	    java -jar spring-boot-cs-app.jar	
-
 ```	
 
-# Implementation :
+# Implementation 
   The CS Car Service App Implemented using following technologies
     1. Spring boot  for developing  REST API with validation  
     2. Maven for dependency managemnt
@@ -43,6 +43,7 @@ This example project demonstrates  fleet management using Spring Boot web applic
 ```java
   Access Swagger docuemntation using below URL, will provide usecases of Rest Api (validate and execute api here)  
    Swagger url : http://localhost:8080/swagger-ui/	 
+   Perform Create ,Read and Update operations using Swagger UI  
 ```
 
 ### Reference Documentation
