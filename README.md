@@ -10,6 +10,44 @@ This example project demonstrates  fleet management using Spring Boot web applic
 # Requirement :
 	Need to build Rest Api for fleet management
 
+# Build : spring-boot-cs-app application 
+```java
+	Download project from git repo from the following location and extract project
+	   https://github.com/satya-moganti/spring-boot-cs-app.git
+	Build a jar using following command
+	   mvn clean install
+	Run application using following command
+       cd target
+	   java -jar spring-boot-cs-app.jar	
+
+```	
+
+# Implementation :
+  The CS Car Service App Implemented using following technologies
+    1. Spring boot  for developing application
+	2. Maven for dependency managemnt
+	3. Swagger for Api Documentation
+	4. Junit for Unit test case
+	5. Logger for logging information
+	6. H2 Database for in memory db managemnt
+
+## H2 Database  
+```java
+	Access H2 Database using below URL 
+	
+	http://127.0.0.1:8080/h2-console 
+	JDBC URL : jdbc:h2:mem:fleetdb
+	Username : admin
+	Password : admin
+	
+```
+
+## Swagger API 
+```java
+	Access Swagger docuemntation using below URL, will provide usecases of Rest Api (validate and execute api here)  
+	  http://localhost:8080/swagger-ui/
+	 
+```
 
 ### Reference Documentation
 For further reference, please consider the following sections:
