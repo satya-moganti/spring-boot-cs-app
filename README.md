@@ -48,6 +48,93 @@ This example project demonstrates  fleet management using Spring Boot web applic
    Perform Create ,Read and Update operations using Swagger UI  
 ```
 
+## Test Data to check REST API
+
+   Use Swagger UI using following  test data
+```java
+   Case 1 : **Creating or Adding car details** 
+	    URL : http://localhost:8080/fleet/cars  
+	    Method : POST  
+	    Request Body : 
+	       {
+	      	 "id": 786584,
+		 "brand": "Flex",
+		 "licensePlate": "6TX2D33",
+		 "manufacturer": "Volkswagen",
+		 "operationCity": "Berlin",
+		 "status": "available"
+	      }
+	   Response Body : Status - 200 
+	      {
+		 "id": 786584,
+		 "brand": "Flex",
+		 "licensePlate": "6TX2D33",
+		 "manufacturer": "Volkswagen",
+		 "operationCity": "Berlin",
+		 "status": "AVAILABLE",
+		 "createdAt": "2022-08-08T06:19:17.712+00:00",
+		 "lastUpdatedAt": "2022-08-08T06:19:17.712+00:00"
+	     }
+```
+```java
+   Case 2 : Fetching car Details By Id
+           URL : http://localhost:8080/fleet/cars/786584 
+	   Method : GET  
+	   Response body: 
+	     {
+  	         "id": 786584,
+  	         "brand": "Flex",
+              	 "licensePlate": "6TX2D33",
+              	 "manufacturer": "Volkswagen",
+              	 "operationCity": "Berlin",
+              	 "status": "AVAILABLE",
+                 "createdAt": "2022-08-08T06:19:17.712+00:00",
+                 "lastUpdatedAt": "2022-08-08T06:19:17.712+00:00"
+            }
+	   
+```
+```java
+   Case 3 : Updating car details 
+	    URL : http://localhost:8080/fleet/cars/786584
+	    Method : PUT  
+	    Request Body : 
+	      {
+	      	 "id": 786584,
+		 "brand": "Flex",
+		 "licensePlate": "6TX2D33",
+		 "manufacturer": "Volkswagen",
+		 "operationCity": "Frankfurt",
+		 "status": "available"
+	      }
+	    Response Body : Status - 200 
+	      {
+		 "id": 786584,
+		 "brand": "Flex",
+		 "licensePlate": "6TX2D33",
+		 "manufacturer": "Volkswagen",
+		 "operationCity": "Frankfurt",
+		 "status": "AVAILABLE",
+		 "createdAt": "2022-08-08T06:19:17.712+00:00",
+		 "lastUpdatedAt": "2022-08-08T06:19:23.317+00:00"
+	     }
+```
+```java
+   Case 3 : Fetching list of car details 
+   	    URL : http://localhost:8080/fleet/cars
+	    Method : GET
+	    Response : Status - 200 ,
+	     [{
+		 "id": 786584,
+		 "brand": "Flex",
+		 "licensePlate": "6TX2D33",
+		 "manufacturer": "Volkswagen",
+		 "operationCity": "Frankfurt",
+		 "status": "AVAILABLE",
+		 "createdAt": "2022-08-08T06:19:17.712+00:00",
+		 "lastUpdatedAt": "2022-08-08T06:19:23.317+00:00"
+	     }]
+     
+```
 ### Reference Documentation
 For further reference :
 
